@@ -1,0 +1,183 @@
+body {
+  background: linear-gradient(135deg, #6b48ff, #00ddeb);
+  min-height: 100vh;
+  margin: 0;
+  transition: background 0.5s ease;
+}
+
+.app {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 100;
+}
+
+.created {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: color 0.3s ease;
+}
+
+.created:hover {
+  color: #007bff;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  width: 70%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.search:focus {
+  transform: scale(1.05);
+}
+
+.searchBtn {
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.searchBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.translateBtn{
+  width: 100px;
+  background-color: #ff8c8c;
+  padding: 10px 20 px;
+  font-size: 20px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.translateBtn:hover {
+  background-color: #ff6666;
+  transform: scale(1.1);
+}
+
+.weatherBox {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  margin-bottom: 32px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.tempBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.tempValue {
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+}
+
+.weatherIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.description,
+.feelsLike {
+  font-size: 1.5rem;
+  color: white;
+  margin: 10px 0;
+}
+
+.cityName {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.forecastContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Card{
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  transition: transform 0.3s ease;
+}
+
+.Card:hover {
+  transform: scale(1.05);
+}
+
+.day,
+.forecastTemp,
+.forecastDescription {
+  color: white;
+  margin: 5px 0;
+}
+
+.forecastIcon {
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
